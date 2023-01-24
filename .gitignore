@@ -75,6 +75,5 @@ default.db
 venv/
 .json
 .csv
-migrations/
 db.sqlite3
 *.pdf
