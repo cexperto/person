@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ii5qgq^ircc=d1%2!!o5#vwn@8=&m4gy+@l85^se5^u^22rqwx
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['person-production.up.railway.app']
 
 
 # Application definition
@@ -57,8 +57,6 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'person.urls'
 
 REST_FRAMEWORK = {
-    # 'EXCEPTION_HANDLER': 'customusers.exceptions.status_code_handler',
-    
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10
 }
